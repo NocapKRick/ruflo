@@ -1,0 +1,15 @@
+{
+  "name": "homeowner-health-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Track the age, service history, warranties and costs of a home's major systems, with maintenance reminders and replacement-window alerts.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  }
+}
