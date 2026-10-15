@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Homeowner Health</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/overview">
+        <span class="brand-mark" aria-hidden="true">🏠</span>
+        <span><strong id="home-title">Homeowner Health</strong><small id="home-address"></small></span>
+      </a>
+      <div id="header-score" class="header-score"></div>
+    </div>
+    <nav class="wrap" aria-label="Main" hidden>
+      <a href="#/overview">Overview</a>
+      <a href="#/systems">Systems</a>
+      <a href="#/reminders">Reminders <span id="reminder-badge" class="badge"></span></a>
+      <a href="#/costs">Costs</a>
+      <a href="#/quotes">Quotes</a>
+      <a href="#/home">Home</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1"></main>
+
+  <dialog id="dialog" aria-label="Edit">
+    <div id="dialog-body"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="wrap muted small">
+    Lifespans and costs are typical ranges for planning, not a professional assessment. Data stays in this browser.
+  </footer>
+
+  <noscript>This app needs JavaScript enabled.</noscript>
+  <script type="module" src="/src/ui/app.mjs"></script>
+</body>
+</html>
